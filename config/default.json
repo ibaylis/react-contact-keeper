@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://ibaylis:qwerty1!@react-contact-keeper-50iwu.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://ibaylis:qwerty1!@react-contact-keeper-50iwu.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
