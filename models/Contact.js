@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const ContactSchema = mongoose.Schema({
+//const ContactSchema = mongoose.Schema({})
+const ContactSchema =  new Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'users'
@@ -26,4 +28,4 @@ const ContactSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('user', ContactSchema);
+module.exports = mongoose.model('contact', ContactSchema);
