@@ -10,8 +10,13 @@ import Login from './context/auth/Login';
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/contact/AuthState';
 import AlertState from './context/ALERT/AlertState';
+import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
+
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
 
 const App = () => {
   return (
